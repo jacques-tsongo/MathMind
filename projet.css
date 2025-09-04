@@ -1,6 +1,11 @@
 *, ::after, ::before{
     box-sizing: border-box;
 }
+:root{
+    --couleur : #dd830ee1;
+    --hover : #ff8800;
+    --blanche: rgba(255, 255, 255, 0.856);
+}
 body,html{
     width: 100%;
     height: 100%;
@@ -9,6 +14,7 @@ body,html{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main{
     width: 100%;
@@ -29,7 +35,7 @@ body,html{
     font-size: 80px;
     font-family: sans-serif;
     font-style: italic;
-    color: rgb(66, 218, 32);
+    color: rgb(153, 218, 32);
 }
 .about{
     max-width: 600px;
@@ -43,12 +49,12 @@ body,html{
     border-radius: 20px;
 }
 .acceuil:hover{
-    background: #ffffff3a;
+    background: #ffffff2d;
 }
 .begin{
     border: 0;
     outline: none;
-    background: #c40094;
+    background: var(--couleur);
     padding: 25px;
     color: white;
     border-radius: 12px;
@@ -58,7 +64,7 @@ body,html{
     cursor: pointer;
 }
 .begin:hover{
-    background: #c40093c9;
+    background: var(--hover);
 }
 .moi{
     width: 120px;
@@ -244,12 +250,14 @@ body,html{
     margin: 0;
     font-weight: 100;
     text-align: center;
+    color: var(--blanche);
 }
 .questions_reussies{
     margin-top: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
+    color: var(--blanche);
 }
 .circular_progress{
     display: flex;
@@ -258,13 +266,14 @@ body,html{
     align-items: center;
     width: 250px;
     height: 250px;
-    background: conic-gradient(#ea05ff 3deg, rgba(106, 105, 105, 0.341) 0deg);
+    background: conic-gradient(#dda60ee1 3deg, rgba(106, 105, 105, 0.341) 0deg);
     text-align: center;
     border-radius: 50%;
     margin: 10px auto;
     font-size: 40px;
     font-family: chiller, Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    color: var(--blanche);
 }
 .circular_progress::before{
     content: "";
@@ -281,20 +290,20 @@ body,html{
     width: 120px;
     padding: 6px;
     font-size: 16px;
-    border: 4px #c40094 solid;
+    border: 4px #dd830ee1 solid;
     border-radius: 6px;
-    color: #c40094;
+    color: var(--couleur);
     font-size: 18px;
     font-weight: 1000;
     transition: all .3s;
 }
 .back:hover{
-    background: #c40094;
+    background: var(--couleur);
     color: white;
 }
 .begin_again{
     width: fit-content;
-    background: #c40094;
+    background: var(--couleur);
     padding: 6px;
     font-size: 16px;
     border:0;
@@ -303,6 +312,9 @@ body,html{
     font-size: 18px;
     font-weight: 1000;
     transition: all .3s;
+}
+.begin_again:hover{
+    background: var(--hover);
 }
 .pourcentage_counter{
     display: flex;
