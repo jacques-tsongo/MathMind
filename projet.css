@@ -4,6 +4,7 @@
 :root{
     --couleur : #dd830ee1;
     --hover : #ff8800;
+    --div: rgba(198, 127, 28, 0.556);
     --blanche: rgba(255, 255, 255, 0.856);
 }
 body,html{
@@ -40,6 +41,7 @@ body,html{
 .about{
     max-width: 600px;
     padding: 0 20px;
+    color: #f9f1f1;
     font-size: 25px;
 }
 .acceuil{
@@ -90,18 +92,18 @@ body,html{
     display: none;
 }
 .instructions{
-    background: #2c262b;
+    background: var(--div);
     max-width: 800px;
     margin: 15px;
     padding: 20px;
     border-radius: 8px;
     transition: all .3s;
-    border: 2px solid #c40094;
+    border: 10px dotted #fffb04;
     width: 60%;
 }
 .how_play{
-    color: #fff;
-    background: linear-gradient(45deg, transparent, #c40094, transparent);
+    color: var(--blanche);
+    background: linear-gradient(45deg, transparent, #f6ff00be, transparent);
     width: 100%;
     text-align: center;
 }
@@ -109,7 +111,7 @@ body,html{
     font-family: monospace,Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 2;
-    color: white;
+    color: var(--blanche);
 }
 .instructions ul{
     list-style: circle;
@@ -122,15 +124,15 @@ body,html{
 }
 .deux_bouttons .continuer{
     width: 120px;
-    background: #c40094;
+    background: var(--couleur);
     padding: 10px;
-    color: #fff;
+    color: var(--blanche);
     font-size: 16px;
     border: 0;
     border-radius: 6px;
 }
 .continuer:hover{
-    background: #c40090a4;
+    background: var(--hover);
     
 }
 .show{
@@ -141,13 +143,15 @@ body,html{
     width: 120px;
     padding: 6px;
     font-size: 16px;
-    border: 4px #c40094 solid;
+    border: 4px #fffb04 solid;
     border-radius: 6px;
-    color: #c40094;
+    color: rgb(255, 115, 0);
     transition: all .3s;
+    font-weight: 500;
+    background: #cfcaca;
 }
 .close:hover{
-    background: #c40094;
+    background: #fffb04c2;
     color: white;
 }
 
@@ -170,10 +174,11 @@ body,html{
     left: -200%;
     background: #09001d;
     transition: 1s;
+    padding-bottom: 5px;
 }
 .jouerChild{
     width: 65%;
-    padding: 25px;
+    /* padding: 25px 25px 0 25px; */
     visibility: hidden; 
     transform: scale(.5);
     transition: all .8s;
@@ -184,6 +189,7 @@ body,html{
     text-align: center;
     margin: 0;
     color: #ffffffa9;
+    padding: 0;
 }
 .see{
     left: 0;
@@ -258,6 +264,18 @@ body,html{
     font-size: 30px;
     text-align: center;
     color: var(--blanche);
+}
+.chrono-container{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+.chrono-container span{
+    font-size: 40px;
+    font-family: cursive;
+    color: red;
 }
 .circular_progress{
     display: flex;
@@ -460,6 +478,9 @@ body,html{
         width: 96%;
         margin: 20px;
     }
+    .next_back{
+        padding-bottom: 15px;
+    }
 }
 @media screen and (max-width: 450px) {
     .main h1{
@@ -473,7 +494,7 @@ body,html{
         font-size: 23px;
     }
     .choisir_niveau{
-        font-size: 30px;
+        font-size: 20px;
     }
     .niveaux_btn{
         width: 100%;

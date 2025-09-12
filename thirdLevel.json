@@ -1,0 +1,143 @@
+[
+  {
+    "question": "Quel est le plus grand pays du monde ?",
+    "bon": "Russie",
+    "reponse": [
+      { "text": "Chine"},
+      { "text": "USA"},
+      { "text": "Russie"},
+      { "text": "Canada"}
+    ]
+  },
+  {
+    "question":
+      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 2 ?",
+    "bon": "1/6",
+    "reponse": [{ "text": "17" }, { "text": "19" }, { "text": "1/6" }, { "text": "2" }]
+  },
+  {
+    "question": "Résous : 4x - 9 = 11",
+    "bon": "5",
+    "reponse": [{ "text": "14" }, { "text": "9" }, { "text": "15" }, { "text": "5" }]
+  },
+  {
+    "question":
+      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 3 ?",
+    "bon": "1/6",
+    "reponse": [{ "text": "3" }, { "text": "11" }, { "text": "16" }, { "text": "1/6" }]
+  },
+  {
+    "question": "Résous : 5x - 5 = 2",
+    "bon": "1",
+    "reponse": [{ "text": "8" }, { "text": "6" }, { "text": "2" }, { "text": "1" }]
+  },
+  {
+    "question": "Le rayon d’un cercle de diamètre 2 est :",
+    "bon": "1.0",
+    "reponse": [{ "text": "3" }, { "text": "12" }, { "text": "1.0" }, { "text": "18" }]
+  },
+  {
+    "question": "Le produit de 13 et 1 est :",
+    "bon": "13",
+    "reponse": [{ "text": "23" }, { "text": "2" }, { "text": "13" }, { "text": "10" }]
+  },
+  {
+    "question":
+      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 6 ?",
+    "bon": "1/6",
+    "reponse": [{ "text": "9" }, { "text": "15" }, { "text": "7" }, { "text": "1/6" }]
+  },
+  {
+    "question": "L’aire d’un carré de côté 2 est :",
+    "bon": "4",
+    "reponse": [{ "text": "1" }, { "text": "4" }, { "text": "12" }, { "text": "13" }]
+  },
+  {
+    "question":
+      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 4 ?",
+    "bon": "1/6",
+    "reponse": [{ "text": "6" }, { "text": "1/6" }, { "text": "12" }, { "text": "20" }]
+  },
+  {
+    "question": "La somme de 15 et 11 est :",
+    "bon": "26",
+    "reponse": [{ "text": "11" }, { "text": "2" }, { "text": "28" }, { "text": "26" }]
+  },
+  {
+    "question":
+      "On tire une carte d’un jeu de 52 cartes. Quelle est la probabilité de tirer un As ?",
+    "bon": "4/52",
+    "reponse": [{ "text": "3" }, { "text": "17" }, { "text": "4/52" }, { "text": "12" }]
+  },
+  {
+    "question": "Si x = 1, quelle est la valeur de 1x + 7 ?",
+    "bon": "8",
+    "reponse": [{ "text": "13" }, { "text": "8" }, { "text": "18" }, { "text": "5" }]
+  },
+  {
+    "question":
+      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 2 ?",
+    "bon": "1/6",
+    "reponse": [{ "text": "20" }, { "text": "1/6" }, { "text": "4" }, { "text": "16" }]
+  },
+  {
+    "question": "Le périmètre d’un rectangle 6 x 3 est :",
+    "bon": "18",
+    "reponse": [{ "text": "3" }, { "text": "17" }, { "text": "22" }, { "text": "18" }]
+  },
+  {
+    "question": "La somme de 12 et 18 est :",
+    "bon": "30",
+    "reponse": [{ "text": "30" }, { "text": "18" }, { "text": "36" }, { "text": "21" }]
+  },
+  {
+    "question": "Le produit de 6 et 12 est :",
+    "bon": "72",
+    "reponse": [{ "text": "72" }, { "text": "35" }, { "text": "58" }, { "text": "16" }]
+  },
+  {
+    "question": "Résous : 5x - 4 = 18",
+    "bon": "4",
+    "reponse": [{ "text": "4" }, { "text": "14" }, { "text": "10" }, { "text": "7" }]
+  },
+  {
+    "question": "Le périmètre d’un rectangle 10 x 10 est :",
+    "bon": "40",
+    "reponse": [{ "text": "40" }, { "text": "16" }, { "text": "50" }, { "text": "21" }]
+  },
+  {
+    "question": "Le produit de 4 et 2 est :",
+    "bon": "8",
+    "reponse": [{ "text": "2" }, { "text": "18" }, { "text": "8" }, { "text": "7" }]
+  },
+  {
+    "question": "Résous : 5x - 9 = 14",
+    "bon": "4",
+    "reponse": [{ "text": "7" }, { "text": "6" }, { "text": "1" }, { "text": "4" }]
+  },
+  {
+    "question": "L’aire d’un carré de côté 12 est :",
+    "bon": "144",
+    "reponse": [{ "text": "144" }, { "text": "58" }, { "text": "56" }, { "text": "7" }]
+  },
+  {
+    "question": "Résous : 5x - 10 = 15",
+    "bon": "5",
+    "reponse": [{ "text": "10" }, { "text": "15" }, { "text": "1" }, { "text": "5" }]
+  },
+  {
+    "question": "L’aire d’un carré de côté 5 est :",
+    "bon": "25",
+    "reponse": [{ "text": "25" }, { "text": "33" }, { "text": "32" }, { "text": "3" }]
+  },
+  {
+    "question": "Si x = 3, quelle est la valeur de 3x + 3 ?",
+    "bon": "12",
+    "reponse": [{ "text": "4" }, { "text": "12" }, { "text": "22" }, { "text": "9" }]
+  },
+  {
+    "question": "L’aire d’un carré de côté 4 est :",
+    "bon": "16",
+    "reponse": [{ "text": "13" }, { "text": "1" }, { "text": "16" },{ "text" : "6" }]
+  }  
+]

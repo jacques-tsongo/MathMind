@@ -1,0 +1,181 @@
+[
+  {
+    "question": "Combien y a-t-il de planètes dans le système solaire ?",
+    "bon": "8",
+    "reponse": [
+      { "text": "7"},
+      { "text": "8"},
+      { "text": "9"},
+      { "text": "6"}
+    ]
+  },
+   {
+    "question":
+      "Un bus contient 78 passagers. 15 descendent et 19 montent. Combien restent-ils ?",
+    "bon": "82",
+    "reponse": [{ "text": "78" }, { "text": "82" }, { "text": "87" }, { "text": "81" }]
+  },
+  {
+    "question": "Complète la suite : 17, 18, 19, 20, ?",
+    "bon": "21",
+    "reponse": [{ "text": "19" }, { "text": "22" }, { "text": "21" }, { "text": "24" }]
+  },
+  {
+    "question": "Il y a 7 ans, j’avais 5 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "12",
+    "reponse": [{ "text": "12" }, { "text": "13" }, { "text": "17" }, { "text": "7" }]
+  },
+  {
+    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
+    "bon": "vendredi",
+    "reponse": [
+      { "text": "10h" },
+      { "text": "Samedi" },
+      { "text": "vendredi" },
+      { "text": "Pierre" }
+    ]
+  },
+  {
+    "question": "Quelle est la prochaine valeur dans la suite : 12, 16, 20, ?",
+    "bon": "24",
+    "reponse": [{ "text": "24" }, { "text": "29" }, { "text": "26" }, { "text": "31" }]
+  },
+  {
+    "question": "Complète la suite : 16, 21, 26, 31, ?",
+    "bon": "36",
+    "reponse": [{ "text": "36" }, { "text": "43" }, { "text": "41" }, { "text": "33" }]
+  },
+  {
+    "question":
+      "Un fermier a 13 chèvres. Toutes sauf 13 meurent. Combien restent-elles ?",
+    "bon": "13",
+    "reponse": [{ "text": "10" }, { "text": "13" }, { "text": "19" }, { "text": "15" }]
+  },
+  {
+    "question": "Complète la suite : 9, 17, 25, 33, ?",
+    "bon": "41",
+    "reponse": [{ "text": "41" }, { "text": "47" }, { "text": "38" }, { "text": "49" }]
+  },
+  {
+    "question":
+      "Un bus contient 77 passagers. 16 descendent et 7 montent. Combien restent-ils ?",
+    "bon": "68",
+    "reponse": [{ "text": "73" }, { "text": "68" }, { "text": "64" }, { "text": "66" }]
+  },
+  {
+    "question": "Il y a 7 ans, j’avais 7 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "14",
+    "reponse": [{ "text": "22" }, { "text": "9" }, { "text": "19" }, { "text": "14" }]
+  },
+  {
+    "question":
+      "Un fermier a 12 chèvres. Toutes sauf 15 meurent. Combien restent-elles ?",
+    "bon": "15",
+    "reponse": [{ "text": "21" }, { "text": "15" }, { "text": "17" }, { "text": "16" }]
+  },
+  {
+    "question": "Complète la suite : 9, 12, 15, 18, ?",
+    "bon": "21",
+    "reponse": [{ "text": "20" }, { "text": "24" }, { "text": "21" }, { "text": "27" }]
+  },
+  {
+    "question":
+      "Un bus contient 69 passagers. 2 descendent et 6 montent. Combien restent-ils ?",
+    "bon": "73",
+    "reponse": [{ "text": "68" }, { "text": "72" }, { "text": "73" }, { "text": "78" }]
+  },
+  {
+    "question":
+      "Un bus contient 55 passagers. 12 descendent et 19 montent. Combien restent-ils ?",
+    "bon": "62",
+    "reponse": [{ "text": "72" }, { "text": "62" }, { "text": "64" }, { "text": "69" }]
+  },
+  {
+    "question":
+      "Un fermier a 25 chèvres. Toutes sauf 14 meurent. Combien restent-elles ?",
+    "bon": "14",
+    "reponse": [{ "text": "9" }, { "text": "14" }, { "text": "10" }, { "text": "15" }]
+  },
+  {
+    "question":
+      "Un escargot monte 5 m par jour et descend 2 m la nuit. En combien de jours atteint-il 8 m ?",
+    "bon": "2",
+    "reponse": [{ "text": "2" }, { "text": "6" }, { "text": "12" }, { "text": "8" }]
+  },
+  {
+    "question":
+      "Un bus contient 54 passagers. 14 descendent et 18 montent. Combien restent-ils ?",
+    "bon": "58",
+    "reponse": [{ "text": "65" }, { "text": "64" }, { "text": "58" }, { "text": "62" }]
+  },
+  {
+    "question":
+      "Un fermier a 18 chèvres. Toutes sauf 6 meurent. Combien restent-elles ?",
+    "bon": "6",
+    "reponse": [{ "text": "15" }, { "text": "4" }, { "text": "6" }, { "text": "14" }]
+  },
+  {
+    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
+    "bon": "vendredi",
+    "reponse": [
+      { "text": "mercredi" },
+      { "text": "Samedi" },
+      { "text": "vendredi" },
+      { "text": "jeudi" }
+    ]
+  },
+  {
+    "question":
+      "Un escargot monte 4 m par jour et descend 2 m la nuit. En combien de jours atteint-il 10 m ?",
+    "bon": "4",
+    "reponse": [{ "text": "3" }, { "text": "11" }, { "text": "4" }, { "text": "12" }]
+  },
+  {
+    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
+    "bon": "vendredi",
+    "reponse": [
+      { "text": "Samedi" },
+      { "text": "vendredi" },
+      { "text": "Paul" },
+      { "text": "Pierre" }
+    ]
+  },
+  {
+    "question":
+      "Un fermier a 14 chèvres. Toutes sauf 12 meurent. Combien restent-elles ?",
+    "bon": "12",
+    "reponse": [{ "text": "16" }, { "text": "11" }, { "text": "12" }, { "text": "8" }]
+  },
+  {
+    "question": "Si demain est samedi, quel jour était-il avant-hier ?",
+    "bon": "jeudi",
+    "reponse": [
+      { "text": "Pierre" },
+      { "text": "Vendredi" },
+      { "text": "jeudi" },
+      { "text": "Samedi" }
+    ]
+  },
+  {
+    "question": "Il y a 11 ans, j’avais 11 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "22",
+    "reponse": [{ "text": "25" }, { "text": "22" }, { "text": "26" }, { "text": "20" }]
+  },
+  {
+    "question": "Si demain est vendredi, quel jour était-il avant-hier ?",
+    "bon": "mercredi",
+    "reponse": [
+      { "text": "mercredi" },
+      { "text": "jeudi" },
+      { "text": "samedi" },
+      { "text": "Vendredi" }
+    ]
+
+  },
+  {
+    "question":
+      "Un bus contient 78 passagers. 19 descendent et 10 montent. Combien restent-ils ?",
+    "bon": "69",
+    "reponse": [{ "text": "69" }, { "text": "79" }, { "text": "68" }, { "text": "65" }]
+  }
+]

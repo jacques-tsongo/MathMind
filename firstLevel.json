@@ -1,0 +1,573 @@
+[
+  {
+      "question": "Résous : 3x + 6 = 15",
+      "bon": "3",
+      "reponse": [
+        { "text": "3"},
+        { "text": "4" },
+        { "text": "2" },
+        { "text": "5" }
+      ]
+    },
+    {
+      "question": "Résous : 2x - 4 = 6",
+      "bon": "5",
+      "reponse": [
+        { "text": "5"},
+        { "text": "4" },
+        { "text": "6" },
+        { "text": "3" }
+      ]
+    },
+    {
+      "question": "Quelle est la prochaine valeur dans la suite : 3, 6, 9, ?",
+      "bon": "12",
+      "reponse": [
+        { "text": "10"},
+        { "text": "11"},
+        { "text": "12"},
+        { "text": "13"}
+      ]
+    },
+    {
+      "question": "Si x = 7, quelle est la valeur de 2x + 3 ?",
+      "bon": "17",
+      "reponse": [
+        { "text": "14" },
+        { "text": "17"},
+        { "text": "15" },
+        { "text": "16" }
+      ]
+    },
+    {
+      "question": "Résous : 4x - 8 = 12",
+      "bon": "5",
+      "reponse": [
+        { "text": "5"},
+        { "text": "4" },
+        { "text": "6" },
+        { "text": "3" }
+      ]
+    },
+    {
+      "question": "Résous : 5x + 5 = 30",
+      "bon": "5",
+      "reponse": [
+        { "text": "6" },
+        { "text": "5"},
+        { "text": "4" },
+        { "text": "3" }
+      ]
+    },
+    {
+      "question": "Trouve la suite : 2, 4, 8, 16, ?",
+      "bon": "32",
+      "reponse": [
+        { "text": "30" },
+        { "text": "32"},
+        { "text": "28" },
+        { "text": "36" }
+      ]
+    },
+    {
+      "question": "Si x = 4, que vaut 3x + 2 ?",
+      "bon": "14",
+      "reponse": [
+        { "text": "12" },
+        { "text": "13" },
+        { "text": "14"},
+        { "text": "15" }
+      ]
+    },
+    {
+    "question": "Résous : 5x - 10 = 12",
+    "bon": "4",
+    "reponse": [
+      { "text": "2" },
+      { "text": "12"},
+      { "text": "9" },
+      { "text": "4"}
+    ]
+  },
+  {
+    "question": "Résous : 5x - 10 = 6",
+    "bon": "3",
+    "reponse": [
+      { "text": "5"},
+      { "text": "11" },
+      { "text": "3"},
+      { "text": "13" }
+    ]
+  },
+  {
+    "question": "Quelle est la prochaine valeur dans la suite : 9, 10, 11, ?",
+    "bon": "12",
+    "reponse": [
+      { "text": "18" },
+      { "text": "12"},
+      { "text": "21" },
+      { "text": "17" }
+    ]
+  },
+  {
+    "question": "Si x = 9, quelle est la valeur de 1x + 9 ?",
+    "bon": "18",
+    "reponse": [
+      { "text": "5"},
+      { "text": "1"},
+      { "text": "2"},
+      { "text": "18"}
+    ]
+  },
+  {
+    "question": "Si deux heures plus tôt il était deux heures plus tard, il serait midi. Quelle heure est-il maintenant ?",
+    "bon": "10h",
+    "reponse": [
+      { "text": "8h"},
+      { "text": "11h" },
+      { "text": "10h"},
+      { "text": "9h"}
+    ]
+  },
+  {
+    "question": "Pierre est plus grand que Paul. Paul est plus grand que Jean. Qui est le plus petit ?",
+    "bon": "Jean",
+    "reponse": [
+      { "text": "pierre"},
+      { "text": "paul"},
+      { "text": "aucun"},
+      { "text": "Jean"}
+    ]
+  },
+  {
+    "question": "Si x = 1, quelle est la valeur de 1x + 7 ?",
+    "bon": "8",
+    "reponse": [
+      { "text": "13"},
+      { "text": "8"},
+      { "text": "18"},
+      { "text": "5"}
+    ]
+  },
+  {
+    "question": "La somme de 17 et 4 est :",
+    "bon": "21",
+    "reponse": [
+      { "text": "21"},
+      { "text": "28" },
+      { "text": "8"},
+      { "text": "26" }
+    ]
+  },
+  {
+    "question": "Le périmètre d’un rectangle 8 x 4 est :",
+    "bon": "24",
+    "reponse": [
+      { "text": "14" },
+      { "text": "31" },
+      { "text": "18" },
+      { "text": "24"}
+    ]
+  },
+  {
+    "question": "Il y a 6 ans, j’avais 8 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "14",
+    "reponse": [
+      { "text": "10" },
+      { "text": "24" },
+      { "text": "14"},
+      { "text": "19" }
+    ]
+  },
+  {
+    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 3 ?",
+    "bon": "1/6",
+    "reponse": [
+      { "text": "11" },
+      { "text": "1/6" },
+      { "text": "14"},
+      { "text": "1"}
+    ]
+  },
+  {
+    "question": "Si x = 4, quelle est la valeur de 4x + 4 ?",
+    "bon": "20",
+    "reponse": [
+      { "text": "20"},
+      { "text": "5"},
+      { "text": "15" },
+      { "text": "28" }
+    ]
+  },
+  {
+    "question": "Si dans 5 ans Paul aura 32 ans, quel est son âge actuel ?",
+    "bon": "27",
+    "reponse": [
+      { "text": "33" },
+      { "text": "35" },
+      { "text": "27"},
+      { "text": "24" }
+    ]
+  },
+  {
+    "question": "Le rayon d’un cercle de diamètre 19 est :",
+    "bon": "9.5",
+    "reponse": [
+      { "text": "11"},
+      { "text": "16"},
+      { "text": "15"},
+      { "text": "9.5"}
+    ]
+  },
+  {
+    "question": "Complète la suite : 17, 18, 19, 20, ?",
+    "bon": "21",
+    "reponse": [
+      { "text": "30" },
+      { "text": "29" },
+      { "text": "21"},
+      { "text": "24" }
+    ]
+  },
+  {
+    "question": "Le périmètre d’un rectangle 2 x 4 est :",
+    "bon": "12",
+    "reponse": [
+      { "text": "2" },
+      { "text": "12" },
+      { "text": "1" },
+      { "text": "6" }
+    ]
+  },
+  {
+    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 1 ?",
+    "bon": "1/6",
+    "reponse": [
+      { "text": "1/6" },
+      { "text": "5" },
+      { "text": "17" },
+      { "text": "7" }
+    ]
+  },
+  {
+    "question": "Un bus contient 69 passagers. 9 descendent et 2 montent. Combien restent-ils ?",
+    "bon": "62",
+    "reponse": [
+      { "text": "57" },
+      { "text": "62"},
+      { "text": "61" },
+      { "text": "65" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 7, 8, 9, 10, ?",
+    "bon": "11",
+    "reponse": [
+      { "text": "11"},
+      { "text": "13" },
+      { "text": "14" },
+      { "text": "6"}
+    ]
+  },
+  {
+    "question": "Complète la suite : 15, 16, 17, 18, ?",
+    "bon": "19",
+    "reponse": [
+      { "text": "28" },
+      { "text": "23" },
+      { "text": "19"},
+      { "text": "16" }
+    ]
+  },
+  {
+    "question": "Résous : 1x - 6 = 9",
+    "bon": "15",
+    "reponse": [
+      { "text": "3"},
+      { "text": "15"},
+      { "text": "14" },
+      { "text": "13" }
+    ]
+  },
+  {
+    "question": "Si dans 5 ans Paul aura 26 ans, quel est son âge actuel ?",
+    "bon": "21",
+    "reponse": [
+      { "text": "17" },
+      { "text": "21"},
+      { "text": "25" },
+      { "text": "23" }
+    ]
+  },
+  {
+    "question": "Si dans 5 ans Paul aura 21 ans, quel est son âge actuel ?",
+    "bon": "16",
+    "reponse": [
+      { "text": "16"},
+      { "text": "14" },
+      { "text": "12" },
+      { "text": "13" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 15, 22, 29, 36, ?",
+    "bon": "43",
+    "reponse": [
+      { "text": "39" },
+      { "text": "45" },
+      { "text": "47" },
+      { "text": "43"}
+    ]
+  },
+  {
+    "question": "Le produit de 20 et 13 est :",
+    "bon": "260",
+    "reponse": [
+      { "text": "21"},
+      { "text": "260"},
+      { "text": "161" },
+      { "text": "234" }
+    ]
+  },
+  {
+    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 6 ?",
+    "bon": "1/6",
+    "reponse": [
+      { "text": "16"},
+      { "text": "1/6" },
+      { "text": "20" },
+      { "text": "14"}
+    ]
+  },
+  {
+    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 5 ?",
+    "bon": "1/6",
+    "reponse": [
+      { "text": "17"  },
+      { "text": "8"},
+      { "text": "2"},
+      { "text": "1/6"}
+    ]
+  },
+  {
+    "question": "Un bus contient 44 passagers. 12 descendent et 8 montent. Combien restent-ils ?",
+    "bon": "40",
+    "reponse": [
+      { "text": "40"},
+      { "text": "37" },
+      { "text": "46" },
+      { "text": "48" }
+    ]
+  },
+  {
+    "question": "Il y a 7 ans, j’avais 5 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "12",
+    "reponse": [
+      { "text": "12"},
+      { "text": "13" },
+      { "text": "17" },
+      { "text": "7"}
+    ]
+  },
+  {
+    "question": "Un fermier a 20 chèvres. Toutes sauf 7 meurent. Combien restent-elles ?",
+    "bon": "7",
+    "reponse": [
+      { "text": "7"},
+      { "text": "12" },
+      { "text": "9"},
+      { "text": "17" }
+    ]
+  },
+  {
+    "question": "Un escargot monte 4 m par jour et descend 1 m la nuit. En combien de jours atteint-il 13 m ?",
+    "bon": "4",
+    "reponse": [
+      { "text": "3"},
+      { "text": "12" },
+      { "text": "5" },
+      { "text": "4"} 
+    ]
+  },
+  {
+    "question": "Un bus contient 55 passagers. 12 descendent et 19 montent. Combien restent-ils ?",
+    "bon": "62",
+    "reponse": [
+      { "text": "72" },
+      { "text": "62"},
+      { "text": "64" },
+      { "text": "69" }
+    ]
+  },
+  {
+    "question": "Si x = 10, quelle est la valeur de 3x + 10 ?",
+    "bon": "40",
+    "reponse": [
+      { "text": "40"},
+      { "text": "2" },
+      { "text": "24" },
+      { "text": "27"}
+    ]
+  },
+  {
+    "question": "Un escargot monte 3 m par jour et descend 2 m la nuit. En combien de jours atteint-il 9 m ?",
+    "bon": "7",
+    "reponse": [
+      { "text": "17"},
+      { "text": "9"},
+      { "text": "16" },
+      { "text": "7"}
+    ]
+  },
+  {
+    "question": "Quelle est la prochaine valeur dans la suite : 4, 9, 14, ?",
+    "bon": "19",
+    "reponse": [
+      { "text": "19"},
+      { "text": "21" },
+      { "text": "26" },
+      { "text": "17" }
+    ]
+  },
+  {
+    "question": "Il y a 13 ans, j’avais 9 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "22",
+    "reponse": [
+      { "text": "18" },
+      { "text": "26" },
+      { "text": "22"},
+      { "text": "19" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 2, 8, 14, 20, ?",
+    "bon": "26",
+    "reponse": [
+      { "text": "30" },
+      { "text": "36" },
+      { "text": "26"},
+      { "text": "21" }
+    ]
+  },
+  {
+    "question": "Quelle est la prochaine valeur dans la suite : 15, 17, 19, ?",
+    "bon": "21",
+    "reponse": [
+      { "text": "21"},
+      { "text": "19" },
+      { "text": "22" },
+      { "text": "17" }
+    ]
+  },
+  {
+    "question": "Quelle est la valeur de x si 4x + 4 = 20 ?",
+    "bon": "4",
+    "reponse": [
+      { "text": "5" },
+      { "text": "4"},
+      { "text": "6" },
+      { "text": "3" }
+    ]
+  },
+  {
+    "question": "Quelle est la valeur de x si 5x + 3 = 18 ?",
+    "bon": "3",
+    "reponse": [
+      { "text": "2" },
+      { "text": "4" },
+      { "text": "3"},
+      { "text": "5" }
+    ]
+  },
+  {
+    "question": "Un fermier a 30 poules. Toutes sauf 10 meurent. Combien restent-elles ?",
+    "bon": "10",
+    "reponse": [
+      { "text": "20" },
+      { "text": "10"},
+      { "text": "15" },
+      { "text": "30" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 20, 22, 24, 26, ?",
+    "bon": "28",
+    "reponse": [
+      { "text": "28"},
+      { "text": "30" },
+      { "text": "34" },
+      { "text": "27" }
+    ]
+  },
+  {
+    "question": "Quel est le périmètre d’un carré de côté 7 cm ?",
+    "bon": "28",
+    "reponse": [
+      { "text": "28"},
+      { "text": "14" },
+      { "text": "24" },
+      { "text": "21" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 3, 6, 9, 12, ?",
+    "bon": "15",
+    "reponse": [
+      { "text": "12" },
+      { "text": "15"},
+      { "text": "18" },
+      { "text": "20" }
+    ]
+  },
+  {
+    "question": "Un fermier a 25 vaches. Toutes sauf 15 meurent. Combien restent-elles ?",
+    "bon": "15",
+    "reponse": [
+      { "text": "10" },
+      { "text": "15"},
+      { "text": "5"},
+      { "text": "20" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 10, 20, 30, 40, ?",
+    "bon": "50",
+    "reponse": [
+      { "text": "50"},
+      { "text": "45"},
+      { "text": "60"},
+      { "text": "55"}
+    ]
+  },
+  {
+    "question": "Complète la suite : 6, 12, 18, 24, ?",
+    "bon": "30",
+    "reponse": [
+      { "text": "36"},
+      { "text": "30"},
+      { "text": "33"},
+      { "text": "28"}
+    ]
+  },
+  {
+    "question": "Quelle est la valeur de x si 2x + 6 = 14 ?",
+    "bon": "4",
+    "reponse": [
+      { "text": "4"},
+      { "text": "2" },
+      { "text": "6" },
+      { "text": "3" }
+    ]
+  },
+  {
+    "question": "Complète la suite : 1, 3, 5, 7, ?",
+    "bon": "9",
+    "reponse": [
+      { "text": "9"},
+      { "text": "11"},
+      { "text": "8"},
+      { "text": "7"}
+    ]
+  }
+
+]
