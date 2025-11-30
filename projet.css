@@ -24,7 +24,8 @@ body,html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(images/background.jpg)center center /cover no-repeat ;
+    background: #050b2c;
+    /* background: url(images/background.jpg)center center /cover no-repeat ; */
     position: relative;
     pointer-events: auto;
 }
@@ -37,6 +38,7 @@ body,html{
     font-family: sans-serif;
     font-style: italic;
     color: rgb(153, 218, 32);
+    margin: 0;
 }
 .about{
     max-width: 600px;
@@ -46,12 +48,12 @@ body,html{
 }
 .acceuil{
     text-align: center;
-    background: #ffffff22;
+    background: #ffffff0f;
     padding: 20px;
     border-radius: 20px;
 }
 .acceuil:hover{
-    background: #ffffff2d;
+    background: #ffffff16;
 }
 .begin{
     border: 0;
@@ -351,7 +353,7 @@ body,html{
     justify-content: center;
     align-items: center;
     background: #000;
-    background: url(images/background.jpg)center center /cover no-repeat ;
+    /* background: url(images/background.jpg)center center /cover no-repeat ; */
     transition: 1s;
     left: 0;
 }
@@ -484,11 +486,12 @@ body,html{
 }
 @media screen and (max-width: 450px) {
     .main h1{
-        font-size: 55px;
+        font-size: 35px;
     }
     .about{
-        font-size: 30px;
+        font-size: 20px;
         text-align: justify;
+        line-height: 1.5;
     }
     .begin{
         font-size: 23px;
@@ -535,5 +538,151 @@ body,html{
     }
     .questions_reussies{
         text-align: center;
+    }
+}
+
+
+
+/* ============================
+   VERSION TABLETTE (600px - 900px)
+   ============================ */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    /* Accueil */
+    .main h1 {
+        font-size: 40px;
+    }
+
+    .about {
+        font-size: 22px;
+        max-width: 500px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .begin {
+        font-size: 22px;
+        padding: 18px 30px;
+    }
+
+    /* Instructions */
+    .instructions {
+        width: 80%;
+        max-width: 700px;
+        padding: 25px;
+    }
+
+    .how_play {
+        font-size: 32px;
+    }
+
+    .instructions ul li p {
+        font-size: 18px;
+    }
+
+    .deux_bouttons {
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .close, .continuer {
+        width: 150px;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* Ecran du quiz */
+    .jouerChild {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .chrono-container span {
+        font-size: 36px;
+    }
+
+    #la_question {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    #resultats {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .answers {
+        width: 100%;
+        font-size: 20px;
+        height: 50px;
+        margin: 8px 0;
+    }
+
+    .laBonnereponse,
+    .mauvaiseReponse {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    /* Boutons next/return */
+    #next,
+    #return {
+        width: 160px;
+        font-size: 20px;
+        padding: 10px 0;
+        border-radius: 12px;
+    }
+
+    .leScore {
+        font-size: 20px;
+    }
+
+    /* Page résultat */
+    .felicitation {
+        font-size: 48px;
+    }
+
+    .questions_reussies {
+        font-size: 28px;
+    }
+
+    .circular_progress {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circular_progress::before {
+        width: 175px;
+        height: 175px;
+    }
+
+    .pourcent_one {
+        font-size: 34px;
+    }
+
+    .back, .begin_again {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    /* Choix des niveaux */
+    .niveaux {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .choisir_niveau {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .niveaux_btn {
+        width: 100%;
+        padding: 18px;
+        font-size: 22px;
     }
 }
