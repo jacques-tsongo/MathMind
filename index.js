@@ -127,7 +127,7 @@ function handleAnswerClick(button, selectedText) {
   } else {
     const mauvaiseReponse = document.querySelector(".mauvaiseReponse");
     mauvaiseReponse.style.display = "block";
-    mauvaiseReponse.innerHTML = `La bonne réponse est : <em>${vrai_reponse}</em>`;
+    mauvaiseReponse.innerHTML = `La bonne réponse est : <em>${vrai_reponse}</em>  😱`;
   }
   //on desactive tous les bouttons apres avoir cliquer sur un des bouttons puis afficher le boutton next
   allButtons.forEach((btn) => btn.classList.add("disabled"));
@@ -139,7 +139,7 @@ function handleTimeOut() {
   const vrai_reponse = currentQuestion.bon;
   const mauvaiseReponse = document.querySelector(".mauvaiseReponse");
   mauvaiseReponse.style.display = "block";
-  mauvaiseReponse.innerHTML = `Temps de réflexion écoulé !<br>La bonne réponse était : <em><strong>${vrai_reponse}<strong></em>`;
+  mauvaiseReponse.innerHTML = `Temps de réflexion écoulé !<br>La bonne réponse était : <em><strong>${vrai_reponse}<strong></em>  🥺`;
   document.querySelectorAll(".answers").forEach((btn) => {
     btn.classList.add("disabled");
   });
@@ -193,7 +193,7 @@ function showScore() {
   let progress = setInterval(() => {
     progressSturtValue++;
     pourcentageOne.textContent = `${progressSturtValue}%`;
-    circularProgress.style.background = `conic-gradient(#ea05ff ${progressSturtValue * 3.6}deg, rgba(136, 136, 136, 0.1) 0deg)`;
+    circularProgress.style.background = `conic-gradient(rgb(0, 119, 255) ${progressSturtValue * 3.6}deg, rgba(136, 136, 136, 0.1) 0deg)`;
     if (progressSturtValue >= progressEndValue) {
       clearInterval(progress);
     }

@@ -1,114 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz math</title>
-    <link rel="stylesheet" href="projet.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz math</title>
+  <link rel="stylesheet" href="projet.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
+
 <body>
-    <section class="main">
-       <div class="acceuil">
-          <h1>
-            MATH MIND
-          </h1>
-          <p class="about">
-            Bienvenue sur notre application de jeu de calcul de mathématique et la logique mathématique, vous aurez à parcourir des auestions selon des niveaux de complexité; à la fin du test vous serez coté par rapport des questions réussies. Ok merci !
-          </p>
-        <div>
-          <button class="begin">
-            Commençons
-          </button>
+  <section class="main">
+    <div class="acceuil">
+      <h1>
+        MATH MIND
+      </h1>
+      <p class="about">
+        Bienvenue sur notre application de jeu de calcul de mathématique et la logique mathématique, vous aurez à
+        parcourir des auestions selon des niveaux de complexité; à la fin du test vous serez coté par rapport des
+        questions réussies. Ok merci !
+      </p>
+      <div>
+        <button class="begin">
+          Commençons
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="instruction">
+    <div class="instructions">
+      <h2 class="how_play">Comment jouer ?</h2>
+      <ul>
+        <li>
+          <p class="instruction1">Choisissez l'un des niveaux en cliquant déssus</p>
+        </li>
+        <li>
+          <p>Lors du lancement du jeu, cliquez sur la bonne assertion puis next pour passer à la question suivante.</p>
+        </li>
+        <li>
+          <p>Vous aurez 15 secondes pour répondre à chacune des questions.</p>
+        </li>
+        <li>
+          <p>Après une de dix questions successives auxquelles vous répondrez vous trouverez votre score à la fin.</p>
+        </li>
+      </ul>
+      <div class="deux_bouttons">
+        <button class="close">
+          Quitter  🏃‍♂️
+        </button>
+        <button class="continuer">
+          Continuer 
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- choisir le niveau des questions a parcourir -->
+  <div class="les_niveaux levelsShow">
+    <div class="niveaux level-show">
+      <h1 class="choisir_niveau">Veillez choisir un niveau parmi les trois</h1>
+      <button class="niveaux_btn btn1" value="firstLevel">Niveau élémentaire</button>
+      <button class="niveaux_btn btn2" value="secondLevel">Niveau moyen</button>
+      <button class="niveaux_btn btn3" value="thirdLevel">Niveau difficile</button>
+    </div>
+  </div>
+
+  <div class="jouer">
+    <div class="jouerChild">
+      <h2 class="title">MATH MIND</h2>
+      <div class="chrono-container">
+        Temps de réflexion : <span id="chrono">15</span> secondes
+      </div>
+      <h2 id="la_question" class="question"></h2>
+      <p class="leSpan">Question n° 1 sur 10</p>
+      <div id="resultats">
+        <button class="answers" class="btn">1</button>
+        <button class="answers" class="btn">2</button>
+        <button class="answers" class="btn">3</button>
+        <button class="answers" class="btn">4</button>
+
+      </div>
+      <button class="recommencer">Recommencer  🔄</button>
+      <p class="laBonnereponse">
+        Félicitations!  🙏
+      </p>
+      <p class="mauvaiseReponse"></p>
+      <div class="next_back">
+        <button id="return" class="return">Arrêter </button>
+        <button id="next">Next</button>
+      </div>
+      <p class="leScore">Votre score est de 0 sur 10<br>ou 0%</p>
+    </div>
+  </div>
+
+
+
+  <div class="voir_good_score demasquer">
+    <div class="good_score">
+      <h1 class="felicitation">Félicitations !</h1>
+      <p class="questions_reussies">Vous avez réussi 1 de 10 questions</p>
+      <div class="pourcentage_counter">
+        <div class="circular_progress">
+          <span class="pourcent_one">0%</span>
         </div>
-      </section>
-       </div>
-        
-        <div class="instruction">
-          <div class="instructions">
-          <h2 class="how_play">Comment jouer ?</h2>
-            <ul>
-                <li>
-                  <p class="instruction1">Choisissez l'un des niveaux en cliquant déssus</p>
-                </li>
-                <li>
-                  <p>Lors du lancement du jeu, cliquez sur la bonne assertion puis next pour passer à la question suivante</p>
-                </li>
-                <li>
-                  <p>Vous aurez 15 minutes pour répondre à chacune des questions</p>
-                </li>
-                <li>
-                  <p>Après une de dix questions successives auxquelles vous répondrez vous trouverez votre score à la fin</p>
-                </li>
-            </ul>
-            <div class="deux_bouttons">
-                <button class="close">
-                  Quitter
-                </button>
-                <button class="continuer">
-                  Continuer
-                </button>
-            </div>
-        </div>
-        </div>
-
-
-        <!-- choisir le niveau des questions a parcourir -->
-         <div class="les_niveaux levelsShow">
-          <div class="niveaux level-show">
-            <h1 class="choisir_niveau">Veillez choisir un niveau parmi les trois</h1>
-            <button class="niveaux_btn btn1" value="firstLevel">Niveau élémentaire</button>
-            <button class="niveaux_btn btn2" value="secondLevel">Niveau moyen</button>
-            <button class="niveaux_btn btn3" value="thirdLevel">Niveau difficile</button>
-          </div>
-         </div>
-         
-         <div class="jouer">
-           <div class="jouerChild">
-             <h2 class="title">MATH MIND</h2>
-             <div class="chrono-container">
-               Temps de réflexion : <span id="chrono">15</span> secondes
-             </div>
-            <h2 id="la_question" class="question"></h2>
-            <p class="leSpan">Question n° 1 sur 10</p>
-            <div id="resultats">
-              <button class="answers" class="btn">1</button>
-              <button class="answers"  class="btn">2</button>
-              <button class="answers"  class="btn">3</button>
-              <button class="answers"  class="btn">4</button>
-              
-            </div>
-            <button class="recommencer">Recommencer </button>
-            <p class="laBonnereponse">
-              félicitations!
-            </p>
-            <p class="mauvaiseReponse"></p>
-            <div class="next_back">
-              <button id="return" class="return">Arrêter</button>
-              <button id="next">Next</button>
-            </div>
-            <p class="leScore">Votre score est de 0 sur 10<br>ou 0%</p>
-          </div>
-        </div>
-
-
-
-        <div class="voir_good_score demasquer">
-          <div class="good_score">
-            <h1 class="felicitation">Félicitations !</h1>
-            <p class="questions_reussies">Vous avez réussi 1 de 10 questions</p>
-            <div class="pourcentage_counter">
-              <div class="circular_progress">
-                <span class="pourcent_one">0%</span>
-              </div>
-            </div>
-            <div class="deux_bouttons">
-              <button class="back">Menu</button>
-              <button class="begin_again">Recommencer</button>
-            </div>
-          </div>          
-        </div>      
-     </script>     <script src="index.js"></script>
+      </div>
+      <div class="deux_bouttons">
+        <button class="back">Menu</button>
+        <button class="begin_again">Recommencer</button>
+      </div>
+    </div>
+  </div>
+  </script>
+  <script src="index.js"></script>
 </body>
+
 </html>
