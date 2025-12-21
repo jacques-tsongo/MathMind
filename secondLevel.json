@@ -1,14 +1,4 @@
 [
-  {
-    "question": "Combien y a-t-il de planètes dans le système solaire ?",
-    "bon": "8",
-    "reponse": [
-      { "text": "7"},
-      { "text": "8"},
-      { "text": "9"},
-      { "text": "6"}
-    ]
-  },
    {
     "question":
       "Un bus contient 78 passagers. 15 descendent et 19 montent. Combien restent-ils ?",
@@ -26,19 +16,9 @@
     "reponse": [{ "text": "12" }, { "text": "13" }, { "text": "17" }, { "text": "7" }]
   },
   {
-    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
-    "bon": "vendredi",
-    "reponse": [
-      { "text": "10h" },
-      { "text": "Samedi" },
-      { "text": "vendredi" },
-      { "text": "Pierre" }
-    ]
-  },
-  {
-    "question": "Quelle est la prochaine valeur dans la suite : 12, 16, 20, ?",
-    "bon": "24",
-    "reponse": [{ "text": "24" }, { "text": "29" }, { "text": "26" }, { "text": "31" }]
+    "question": "Quelle est la prochaine valeur dans la suite :9, 10, 12, 16, 24, ?",
+    "bon": "40",
+    "reponse": [{ "text": "40" }, { "text": "24" }, { "text": "30" }, { "text": "32" }]
   },
   {
     "question": "Complète la suite : 16, 21, 26, 31, ?",
@@ -63,14 +43,14 @@
     "reponse": [{ "text": "73" }, { "text": "68" }, { "text": "64" }, { "text": "66" }]
   },
   {
-    "question": "Il y a 7 ans, j’avais 7 ans. Quel âge ai-je aujourd’hui ?",
-    "bon": "14",
-    "reponse": [{ "text": "22" }, { "text": "9" }, { "text": "19" }, { "text": "14" }]
+    "question": "Il y a 7 ans, j’avais 10 ans. Quel âge ai-je aujourd’hui ?",
+    "bon": "17",
+    "reponse": [{ "text": "22" }, { "text": "9" }, { "text": "19" }, { "text": "17" }]
   },
   {
     "question":
-      "Un fermier a 12 chèvres. Toutes sauf 15 meurent. Combien restent-elles ?",
-    "bon": "15",
+      "Un fermier a 15 chèvres. Toutes sauf 12 meurent. Combien restent-elles ?",
+    "bon": "12",
     "reponse": [{ "text": "21" }, { "text": "15" }, { "text": "17" }, { "text": "16" }]
   },
   {
@@ -115,30 +95,10 @@
     "reponse": [{ "text": "15" }, { "text": "4" }, { "text": "6" }, { "text": "14" }]
   },
   {
-    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
-    "bon": "vendredi",
-    "reponse": [
-      { "text": "mercredi" },
-      { "text": "Samedi" },
-      { "text": "vendredi" },
-      { "text": "jeudi" }
-    ]
-  },
-  {
     "question":
       "Un escargot monte 4 m par jour et descend 2 m la nuit. En combien de jours atteint-il 10 m ?",
     "bon": "4",
     "reponse": [{ "text": "3" }, { "text": "11" }, { "text": "4" }, { "text": "12" }]
-  },
-  {
-    "question": "Si demain est dimanche, quel jour était-il avant-hier ?",
-    "bon": "vendredi",
-    "reponse": [
-      { "text": "Samedi" },
-      { "text": "vendredi" },
-      { "text": "Paul" },
-      { "text": "Pierre" }
-    ]
   },
   {
     "question":
@@ -147,30 +107,9 @@
     "reponse": [{ "text": "16" }, { "text": "11" }, { "text": "12" }, { "text": "8" }]
   },
   {
-    "question": "Si demain est samedi, quel jour était-il avant-hier ?",
-    "bon": "jeudi",
-    "reponse": [
-      { "text": "Pierre" },
-      { "text": "Vendredi" },
-      { "text": "jeudi" },
-      { "text": "Samedi" }
-    ]
-  },
-  {
     "question": "Il y a 11 ans, j’avais 11 ans. Quel âge ai-je aujourd’hui ?",
     "bon": "22",
     "reponse": [{ "text": "25" }, { "text": "22" }, { "text": "26" }, { "text": "20" }]
-  },
-  {
-    "question": "Si demain est vendredi, quel jour était-il avant-hier ?",
-    "bon": "mercredi",
-    "reponse": [
-      { "text": "mercredi" },
-      { "text": "jeudi" },
-      { "text": "samedi" },
-      { "text": "Vendredi" }
-    ]
-
   },
   {
     "question":

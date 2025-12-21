@@ -20,16 +20,6 @@
       ]
     },
     {
-      "question": "Quelle est la prochaine valeur dans la suite : 3, 6, 9, ?",
-      "bon": "12",
-      "reponse": [
-        { "text": "10"},
-        { "text": "11"},
-        { "text": "12"},
-        { "text": "13"}
-      ]
-    },
-    {
       "question": "Si x = 7, quelle est la valeur de 2x + 3 ?",
       "bon": "17",
       "reponse": [
@@ -180,16 +170,6 @@
     ]
   },
   {
-    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 3 ?",
-    "bon": "1/6",
-    "reponse": [
-      { "text": "11" },
-      { "text": "1/6" },
-      { "text": "14"},
-      { "text": "1"}
-    ]
-  },
-  {
     "question": "Si x = 4, quelle est la valeur de 4x + 4 ?",
     "bon": "20",
     "reponse": [
@@ -237,16 +217,6 @@
       { "text": "12" },
       { "text": "1" },
       { "text": "6" }
-    ]
-  },
-  {
-    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 1 ?",
-    "bon": "1/6",
-    "reponse": [
-      { "text": "1/6" },
-      { "text": "5" },
-      { "text": "17" },
-      { "text": "7" }
     ]
   },
   {
@@ -330,26 +300,6 @@
     ]
   },
   {
-    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 6 ?",
-    "bon": "1/6",
-    "reponse": [
-      { "text": "16"},
-      { "text": "1/6" },
-      { "text": "20" },
-      { "text": "14"}
-    ]
-  },
-  {
-    "question": "On lance un dé équilibré. Quelle est la probabilité d’obtenir 5 ?",
-    "bon": "1/6",
-    "reponse": [
-      { "text": "17"  },
-      { "text": "8"},
-      { "text": "2"},
-      { "text": "1/6"}
-    ]
-  },
-  {
     "question": "Un bus contient 44 passagers. 12 descendent et 8 montent. Combien restent-ils ?",
     "bon": "40",
     "reponse": [
@@ -370,26 +320,6 @@
     ]
   },
   {
-    "question": "Un fermier a 20 chèvres. Toutes sauf 7 meurent. Combien restent-elles ?",
-    "bon": "7",
-    "reponse": [
-      { "text": "7"},
-      { "text": "12" },
-      { "text": "9"},
-      { "text": "17" }
-    ]
-  },
-  {
-    "question": "Un escargot monte 4 m par jour et descend 1 m la nuit. En combien de jours atteint-il 13 m ?",
-    "bon": "4",
-    "reponse": [
-      { "text": "3"},
-      { "text": "12" },
-      { "text": "5" },
-      { "text": "4"} 
-    ]
-  },
-  {
     "question": "Un bus contient 55 passagers. 12 descendent et 19 montent. Combien restent-ils ?",
     "bon": "62",
     "reponse": [
@@ -407,16 +337,6 @@
       { "text": "2" },
       { "text": "24" },
       { "text": "27"}
-    ]
-  },
-  {
-    "question": "Un escargot monte 3 m par jour et descend 2 m la nuit. En combien de jours atteint-il 9 m ?",
-    "bon": "7",
-    "reponse": [
-      { "text": "17"},
-      { "text": "9"},
-      { "text": "16" },
-      { "text": "7"}
     ]
   },
   {
@@ -480,16 +400,6 @@
     ]
   },
   {
-    "question": "Un fermier a 30 poules. Toutes sauf 10 meurent. Combien restent-elles ?",
-    "bon": "10",
-    "reponse": [
-      { "text": "20" },
-      { "text": "10"},
-      { "text": "15" },
-      { "text": "30" }
-    ]
-  },
-  {
     "question": "Complète la suite : 20, 22, 24, 26, ?",
     "bon": "28",
     "reponse": [
@@ -497,16 +407,6 @@
       { "text": "30" },
       { "text": "34" },
       { "text": "27" }
-    ]
-  },
-  {
-    "question": "Quel est le périmètre d’un carré de côté 7 cm ?",
-    "bon": "28",
-    "reponse": [
-      { "text": "28"},
-      { "text": "14" },
-      { "text": "24" },
-      { "text": "21" }
     ]
   },
   {
@@ -558,16 +458,5 @@
       { "text": "6" },
       { "text": "3" }
     ]
-  },
-  {
-    "question": "Complète la suite : 1, 3, 5, 7, ?",
-    "bon": "9",
-    "reponse": [
-      { "text": "9"},
-      { "text": "11"},
-      { "text": "8"},
-      { "text": "7"}
-    ]
   }
-
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "question": "Quel est le plus grand pays du monde ?",
-    "bon": "Russie",
-    "reponse": [
-      { "text": "Chine"},
-      { "text": "USA"},
-      { "text": "Russie"},
-      { "text": "Canada"}
-    ]
-  },
-  {
     "question":
       "On lance un dé équilibré. Quelle est la probabilité d’obtenir 2 ?",
     "bon": "1/6",
@@ -19,17 +9,6 @@
     "question": "Résous : 4x - 9 = 11",
     "bon": "5",
     "reponse": [{ "text": "14" }, { "text": "9" }, { "text": "15" }, { "text": "5" }]
-  },
-  {
-    "question":
-      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 3 ?",
-    "bon": "1/6",
-    "reponse": [{ "text": "3" }, { "text": "11" }, { "text": "16" }, { "text": "1/6" }]
-  },
-  {
-    "question": "Résous : 5x - 5 = 2",
-    "bon": "1",
-    "reponse": [{ "text": "8" }, { "text": "6" }, { "text": "2" }, { "text": "1" }]
   },
   {
     "question": "Le rayon d’un cercle de diamètre 2 est :",
@@ -75,12 +54,6 @@
     "reponse": [{ "text": "13" }, { "text": "8" }, { "text": "18" }, { "text": "5" }]
   },
   {
-    "question":
-      "On lance un dé équilibré. Quelle est la probabilité d’obtenir 2 ?",
-    "bon": "1/6",
-    "reponse": [{ "text": "20" }, { "text": "1/6" }, { "text": "4" }, { "text": "16" }]
-  },
-  {
     "question": "Le périmètre d’un rectangle 6 x 3 est :",
     "bon": "18",
     "reponse": [{ "text": "3" }, { "text": "17" }, { "text": "22" }, { "text": "18" }]
@@ -94,11 +67,6 @@
     "question": "Le produit de 6 et 12 est :",
     "bon": "72",
     "reponse": [{ "text": "72" }, { "text": "35" }, { "text": "58" }, { "text": "16" }]
-  },
-  {
-    "question": "Résous : 5x - 4 = 18",
-    "bon": "4",
-    "reponse": [{ "text": "4" }, { "text": "14" }, { "text": "10" }, { "text": "7" }]
   },
   {
     "question": "Le périmètre d’un rectangle 10 x 10 est :",
@@ -126,18 +94,18 @@
     "reponse": [{ "text": "10" }, { "text": "15" }, { "text": "1" }, { "text": "5" }]
   },
   {
-    "question": "L’aire d’un carré de côté 5 est :",
-    "bon": "25",
-    "reponse": [{ "text": "25" }, { "text": "33" }, { "text": "32" }, { "text": "3" }]
-  },
-  {
     "question": "Si x = 3, quelle est la valeur de 3x + 3 ?",
     "bon": "12",
     "reponse": [{ "text": "4" }, { "text": "12" }, { "text": "22" }, { "text": "9" }]
   },
   {
+    "question": "On donne x = 3, calculer 4x + 5 = ?",
+    "bon": "17",
+    "reponse": [{ "text": "20" }, { "text": "12" }, { "text": "16" }, { "text": "10" }]
+  },
+  {
     "question": "L’aire d’un carré de côté 4 est :",
     "bon": "16",
-    "reponse": [{ "text": "13" }, { "text": "1" }, { "text": "16" },{ "text" : "6" }]
+    "reponse": [{ "text": "12" }, { "text": "8" }, { "text": "16" },{ "text" : "10" }]
   }  
 ]
