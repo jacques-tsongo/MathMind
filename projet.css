@@ -551,7 +551,7 @@ body,html{
         max-width: 100%;
         height: 100vh;
         background: #050b2c;
-
+        
     }
     .next_back{
         padding-bottom: 15px;
@@ -623,4 +623,81 @@ body,html{
         width: 60%;
     }
 }
+/* la prtie de score et d'apropos */
 
+.apropos{
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 8px white;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+.apropos button{
+    border: 0;
+    background: #04083b;
+    box-shadow: 3px 0 8px rgba(255, 255, 255, 0.748);
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 130px;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.apropos button:hover{
+    background: linear-gradient(to top,rgb(6, 8, 62),rgba(0, 0, 255, 0.468),rgb(4, 13, 68));
+}
+.mes_score{
+    padding: 20px;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: var(--div);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 2s;
+}
+.apps{
+    z-index: -2;
+    transition: ease-in-out 2s;
+}
+.mes_score p{
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 3px 0 10px white;
+    width: 250px;
+    letter-spacing: 3px;
+    border-radius: 9px;
+}
+
+.retour{
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 4px white;
+    border-radius: 50%;
+}
+.de_moi{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--div);
+    color: white;
+}

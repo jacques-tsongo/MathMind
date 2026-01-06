@@ -1,3 +1,5 @@
+// const { createElement } = require("react");
+
 // differents selecteurs des elements du dom
 const question = document.getElementById("la_question");
 const answer = document.getElementById("resultats");
@@ -20,10 +22,11 @@ let currentQuestionIndex = 0;
 let score = 0;
 let counter = 1;
 let currentQuestion = null;
+let niveauChoisi = 'rien';
 
 // la partie qui gere le chronometre
 let chronoInterval = null;
-let tempsRestant = 15; // secondes
+let tempsRestant = 20; // secondes
 const chrono = document.getElementById("chrono");
 
 // Initialisation du quiz
@@ -31,19 +34,29 @@ function init() {
   setupLevelButtons();
   // setupGlobalEvents();
 }
+
+//connaitre quel niveau est choisi
+
+function choisirNV() {
+}
+
 // Choix de niveau des questions et chargement des questuions depuis des fichiers JSON
 function setupLevelButtons() {
   niveauBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const selectedLevel = e.target.value;
       let file = "";
-      //on verifie quel boutton a ete clicke puis on charge les questions de son niveau
+
+      //on verifie quel boutton a ete clicke p uis on charge les questions de son niveau
       if (selectedLevel === "firstLevel") {
         file = "firstLevel.json";
+        niveauChoisi = 'first'
       } else if (selectedLevel === "secondLevel") {
         file = "secondLevel.json";
+        niveauChoisi = 'second'
       } else if (selectedLevel === "thirdLevel") {
         file = "thirdLevel.json";
+        niveauChoisi = 'third'
       }
       //le chargement et la recuperation du fichier
       fetch(file)
@@ -62,6 +75,7 @@ function setupLevelButtons() {
     });
   });
 }
+
 
 //a partir d'ici on lance le quiz avec cette fonction
 function startQuiz() {
@@ -178,6 +192,7 @@ recommencer.addEventListener("click", () => {
 });
 
 // cette fonction nous permet d'afficher la partie du score du parcours dans le jeu
+let progressEndValue = 0;
 function showScore() {
   jouer.classList.remove("see");
   jouerChild.classList.remove("second_see");
@@ -187,8 +202,39 @@ function showScore() {
   let circularProgress = document.querySelector(".circular_progress");
   let pourcentageOne = document.querySelector(".pourcent_one");
   let progressSturtValue = -1;
-  let progressEndValue = (score / 10) * 100;
+  progressEndValue = (score / 10) * 100;
   let speed = 20;
+
+  // la creation de l'espace de stockage des scores
+  if (!localStorage.firstLevel) {
+    console.log('oui ca existe');
+    localStorage.firstLevel = 0;
+  }
+  if (!localStorage.secondLevel) {
+    localStorage.secondLevel = 0;
+  }
+  if (!localStorage.thirdLevel) {
+    localStorage.thirdLevel = 0;
+  }
+  // je cree les variables de stockage des donnees`
+  let firstLevel = localStorage.firstLevel;
+  let secondLevel = localStorage.secondLevel;
+  let thirdLevel = localStorage.thirdLevel;
+
+  //je stock la valeur du score actuel dans le navigateur du joueur ou client
+  if (niveauChoisi === 'first') {
+    if (firstLevel < progressEndValue) {
+      localStorage.firstLevel = progressEndValue;
+    }
+  } else if (niveauChoisi === 'second') {
+    if (secondLevel < progressEndValue) {
+      localStorage.secondLevel = progressEndValue;
+    }
+  } else if (niveauChoisi === 'third') {
+    if (thirdLevel < progressEndValue) {
+      localStorage.thirdLevel = progressEndValue
+    }
+  }
 
   let progress = setInterval(() => {
     progressSturtValue++;
@@ -198,6 +244,7 @@ function showScore() {
       clearInterval(progress);
     }
   }, speed);
+  scoreGard()
 }
 
 // les evenements de click sur les differents bouttons dans le jeu
@@ -238,6 +285,92 @@ document.querySelector(".back").addEventListener("click", () => {
   score = 0;
   document.querySelector(".leScore").innerHTML = `Votre score est de ${score} sur 10<br>ou ${(score / 10) * 100}%`;
 });
+
+
+//la partie de score et d'apropos
+
+const about = document.querySelector('.apropos');
+const boutton = document.createElement('button');
+const apropos_btn = document.createElement('button');
+boutton.innerHTML = 'Vos score';
+apropos_btn.innerHTML = 'A propos';
+
+//je cree l'espace sur le navigateur ou stocker les scores des joueurs
+//le contenu de la partie score
+const mes_score = document.createElement('div');
+const apps = document.createElement('div');
+const app = document.createElement('div');
+const paraScoreEl = document.createElement('p');
+const paraScoreMoy = document.createElement('p');
+const paraScoreDif = document.createElement('p');
+const apps_para1 = document.createElement('p');
+const apps_para2 = document.createElement('p');
+const apps_para3 = document.createElement('p');
+const goBack = document.createElement('img');
+const back = document.createElement('img');
+const i_about = document.createComment('div')
+
+// je traite la photo de retour
+goBack.setAttribute('alt', 'la photo')
+goBack.setAttribute('src', 'images/logo.png')
+goBack.classList.add('retour')
+
+back.setAttribute('alt', 'la photo')
+back.setAttribute('src', 'images/logo.png')
+back.classList.add('retour')
+
+apps.classList.add('de_moi')
+app.classList.add('app')
+mes_score.classList.add('mes_score')
+mes_score.classList.add('apps')
+paraScoreEl.innerHTML = `Elémentaire  : ${localStorage.firstLevel} %`
+paraScoreMoy.innerHTML = `Moyen  : ${localStorage.secondLevel} %`
+paraScoreDif.innerHTML = `Difficile  : ${localStorage.thirdLevel} %`
+
+mes_score.appendChild(paraScoreEl)
+mes_score.appendChild(paraScoreMoy)
+mes_score.appendChild(paraScoreDif)
+mes_score.appendChild(goBack)
+
+apps_para1.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+apps_para2.innerHTML = 'kcjl;xhc jzkl;xcjklz;zck;lkjhsd;flahkf;weisdfoayh;fklsdl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+apps_para3.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+
+app.appendChild(apps_para1)
+app.appendChild(apps_para2)
+app.appendChild(apps_para3)
+app.appendChild(back)
+
+apps.appendChild(app)
+
+//ajout des bouttons a la partie about
+about.addEventListener('mouseenter',() =>{
+  about.appendChild(boutton)
+  about.appendChild(apropos_btn)
+})
+
+lesNiveaux.appendChild(mes_score)
+lesNiveaux.appendChild(apps)
+
+//je cree l'evennement de retour
+goBack.addEventListener('click', () => {
+  mes_score.classList.add('apps')
+})
+// je cree l'evennement qui affiche les scores
+boutton.addEventListener('click', () => {
+  mes_score.classList.remove('apps')
+})
+
+apps.classList.add('apps')
+//je cree l'evennement de retour
+back.addEventListener('click', () => {
+  apps.classList.add('apps')
+})
+
+// je cree l'evennement qui affiche les scores
+apropos_btn.addEventListener('click', () => {
+  apps.classList.remove('apps')
+})
 
 // Puis finalement on lance le jeu
 init();
