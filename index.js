@@ -204,6 +204,11 @@ function showScore() {
   let progressSturtValue = -1;
   progressEndValue = (score / 10) * 100;
   let speed = 20;
+  
+  // je cree les variables de stockage des donnees`
+  let firstLevel = localStorage.firstLevel;
+  let secondLevel = localStorage.secondLevel;
+  let thirdLevel = localStorage.thirdLevel;
 
   // la creation de l'espace de stockage des scores
   if (!localStorage.firstLevel) {
@@ -216,10 +221,6 @@ function showScore() {
   if (!localStorage.thirdLevel) {
     localStorage.thirdLevel = 0;
   }
-  // je cree les variables de stockage des donnees`
-  let firstLevel = localStorage.firstLevel;
-  let secondLevel = localStorage.secondLevel;
-  let thirdLevel = localStorage.thirdLevel;
 
   //je stock la valeur du score actuel dans le navigateur du joueur ou client
   if (niveauChoisi === 'first') {
