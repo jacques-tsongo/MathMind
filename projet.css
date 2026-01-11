@@ -667,6 +667,7 @@ body,html{
     justify-content: center;
     align-items: center;
     transition: ease-in-out 2s;
+    z-index: 50;
 }
 .apps{
     z-index: -2;

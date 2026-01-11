@@ -1,4 +1,3 @@
-// const { createElement } = require("react");
 
 // differents selecteurs des elements du dom
 const question = document.getElementById("la_question");
@@ -210,18 +209,6 @@ function showScore() {
   let secondLevel = localStorage.secondLevel;
   let thirdLevel = localStorage.thirdLevel;
 
-  // la creation de l'espace de stockage des scores
-  if (!localStorage.firstLevel) {
-    console.log('oui ca existe');
-    localStorage.firstLevel = 0;
-  }
-  if (!localStorage.secondLevel) {
-    localStorage.secondLevel = 0;
-  }
-  if (!localStorage.thirdLevel) {
-    localStorage.thirdLevel = 0;
-  }
-
   //je stock la valeur du score actuel dans le navigateur du joueur ou client
   if (niveauChoisi === 'first') {
     if (firstLevel < progressEndValue) {
@@ -260,6 +247,17 @@ document.querySelector(".close").addEventListener("click", () => {
 });
 
 document.querySelector(".continuer").addEventListener("click", () => {
+    // la creation de l'espace de stockage des scores
+  if (!localStorage.firstLevel) {
+    console.log('oui ca existe');
+    localStorage.firstLevel = 0;
+  }
+  if (!localStorage.secondLevel) {
+    localStorage.secondLevel = 0;
+  }
+  if (!localStorage.thirdLevel) {
+    localStorage.thirdLevel = 0;
+  }
   lesNiveaux.classList.remove("levelsShow");
   niveaux.classList.remove("level-show");
 });
@@ -343,6 +341,9 @@ app.appendChild(apps_para3)
 app.appendChild(back)
 
 apps.appendChild(app)
+
+//l'ajout de l'historique a la fin du programme la qu'il y a le resultat final
+resultBox.appendChild(about);
 
 //ajout des bouttons a la partie about
 about.addEventListener('mouseenter',() =>{
