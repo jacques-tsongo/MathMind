@@ -637,6 +637,7 @@ body,html{
     flex-direction: column;
     gap: 20px;
     width: fit-content;
+    cursor: pointer;
 }
 .apropos button{
     border: 0;
@@ -704,5 +705,11 @@ body,html{
     flex-direction: column;
     background: var(--div);
     color: white;
-    /* z-index: 20; */
+    padding: 20px;
+    flex-wrap: wrap;
 }
+.app{
+    max-width: 500px;
+    width: 90%;
+}
+

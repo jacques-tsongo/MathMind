@@ -264,13 +264,14 @@ document.querySelector(".continuer").addEventListener("click", () => {
   niveaux.classList.remove("level-show");
 
   // ajout de l'historique
-  lesNiveaux.appendChild(about)
+  // lesNiveaux.appendChild(about)
 });
 
 document.querySelector(".return").addEventListener("click", () => {
   jouer.classList.remove("see");
   jouerChild.classList.remove("second_see");
   score = 0;
+  // lesNiveaux.appendChild(about);
   document.querySelector(".leScore").innerHTML = `Votre score est de ${score} sur 10<br>ou ${(score / 10) * 100}%`;
 });
 
@@ -282,8 +283,9 @@ function resetQuestion() {
   chrono.innerText = "";
 }
 
-// Revenir a choisur les niveaux depuis l'écran des résultats par le boutton menu
+// Revenir a choisir les niveaux depuis l'écran des résultats par le boutton menu
 document.querySelector(".back").addEventListener("click", () => {
+  lesNiveaux.appendChild(about);
   jouerChild.classList.add("second_see");
   resultBox.classList.add("demasquer");
   score = 0;
@@ -336,7 +338,7 @@ mes_score.appendChild(paraScoreMoy)
 mes_score.appendChild(paraScoreDif)
 mes_score.appendChild(goBack)
 
-apps_para1.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+apps_para1.innerHTML = 'L\'application MATHMIND est une application de jeux; simple et facile à utiliser, conçu pour développer la faculté mentale pour une meilleure réflexion rapide et claire pour des personnes à l\'âge de croissance'
 apps_para2.innerHTML = 'kcjl;xhc jzkl;xcjklz;zck;lkjhsd;flahkf;weisdfoayh;fklsdl;oidao;idoy'
 apps_para3.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
 
@@ -348,11 +350,20 @@ app.appendChild(back)
 apps.appendChild(app)
 
 
-//ajout des bouttons a la partie about
-about.addEventListener('mouseenter',() =>{
-  about.appendChild(boutton)
-  about.appendChild(apropos_btn)
+//ajout des bouttons a la partie about et la verification de l'existance des bouttons avant de les ajouter
+about.addEventListener('click',() =>{
+  if (about.contains(boutton) || about.contains(apropos_btn)) {
+    console.log("ca contient deja");
+    about.removeChild(boutton)
+    about.removeChild(apropos_btn)
+  }
+  else {
+    console.log("ca ne contient pas");
+    about.appendChild(boutton)
+    about.appendChild(apropos_btn)
+  }
 })
+//lajout des sections score et apropos a la partie des niveaux
 lesNiveaux.appendChild(mes_score)
 lesNiveaux.appendChild(apps)
 
@@ -365,7 +376,7 @@ boutton.addEventListener('click', () => {
   mes_score.classList.remove('apps')
 })
 
-// apps.classList.add('apps')
+apps.classList.add('apps')
 //je cree l'evennement de retour
 back.addEventListener('click', () => {
   apps.classList.remove("afficherApropos");
