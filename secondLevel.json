@@ -51,7 +51,7 @@
     "question":
       "Un fermier a 15 chèvres. Toutes sauf 12 meurent. Combien restent-elles ?",
     "bon": "12",
-    "reponse": [{ "text": "21" }, { "text": "15" }, { "text": "17" }, { "text": "16" }]
+    "reponse": [{ "text": "21" }, { "text": "12" }, { "text": "17" }, { "text": "16" }]
   },
   {
     "question": "Complète la suite : 9, 12, 15, 18, ?",
