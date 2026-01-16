@@ -667,11 +667,14 @@ body,html{
     justify-content: center;
     align-items: center;
     transition: ease-in-out 2s;
-    z-index: 50;
+    z-index: 20;
 }
 .apps{
     z-index: -2;
     transition: ease-in-out 2s;
+}
+.afficherApropos{
+    z-index: 20;
 }
 .mes_score p{
     padding: 10px;
@@ -701,4 +704,5 @@ body,html{
     flex-direction: column;
     background: var(--div);
     color: white;
+    /* z-index: 20; */
 }

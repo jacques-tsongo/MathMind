@@ -101,7 +101,7 @@
   {
     "question": "On donne x = 3, calculer 4x + 5 = ?",
     "bon": "17",
-    "reponse": [{ "text": "20" }, { "text": "12" }, { "text": "16" }, { "text": "10" }]
+    "reponse": [{ "text": "20" }, { "text": "12" }, { "text": "17" }, { "text": "10" }]
   },
   {
     "question": "L’aire d’un carré de côté 4 est :",

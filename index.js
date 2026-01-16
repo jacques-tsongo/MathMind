@@ -93,8 +93,10 @@ function startQuiz() {
 function showNextQuestion() {
   resetQuestion();
   if (currentQuestionIndex >= 10) {
+    resultBox.appendChild(about);
     showScore();
-    return;
+  // apps.classList.remove('apps')
+  return;
   }
 
   // Réinitialiser et démarrer le chronometre
@@ -232,7 +234,7 @@ function showScore() {
       clearInterval(progress);
     }
   }, speed);
-  scoreGard()
+  // scoreGard()
 }
 
 // les evenements de click sur les differents bouttons dans le jeu
@@ -260,6 +262,9 @@ document.querySelector(".continuer").addEventListener("click", () => {
   }
   lesNiveaux.classList.remove("levelsShow");
   niveaux.classList.remove("level-show");
+
+  // ajout de l'historique
+  lesNiveaux.appendChild(about)
 });
 
 document.querySelector(".return").addEventListener("click", () => {
@@ -332,7 +337,7 @@ mes_score.appendChild(paraScoreDif)
 mes_score.appendChild(goBack)
 
 apps_para1.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
-apps_para2.innerHTML = 'kcjl;xhc jzkl;xcjklz;zck;lkjhsd;flahkf;weisdfoayh;fklsdl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+apps_para2.innerHTML = 'kcjl;xhc jzkl;xcjklz;zck;lkjhsd;flahkf;weisdfoayh;fklsdl;oidao;idoy'
 apps_para3.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
 
 app.appendChild(apps_para1)
@@ -342,15 +347,12 @@ app.appendChild(back)
 
 apps.appendChild(app)
 
-//l'ajout de l'historique a la fin du programme la qu'il y a le resultat final
-resultBox.appendChild(about);
 
 //ajout des bouttons a la partie about
 about.addEventListener('mouseenter',() =>{
   about.appendChild(boutton)
   about.appendChild(apropos_btn)
 })
-
 lesNiveaux.appendChild(mes_score)
 lesNiveaux.appendChild(apps)
 
@@ -363,15 +365,18 @@ boutton.addEventListener('click', () => {
   mes_score.classList.remove('apps')
 })
 
-apps.classList.add('apps')
+// apps.classList.add('apps')
 //je cree l'evennement de retour
 back.addEventListener('click', () => {
+  apps.classList.remove("afficherApropos");
   apps.classList.add('apps')
 })
 
 // je cree l'evennement qui affiche les scores
 apropos_btn.addEventListener('click', () => {
   apps.classList.remove('apps')
+  console.log("c'est bon");
+  apps.classList.add("afficherApropos");
 })
 
 // Puis finalement on lance le jeu
