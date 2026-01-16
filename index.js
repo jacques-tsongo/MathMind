@@ -316,6 +316,17 @@ const goBack = document.createElement('img');
 const back = document.createElement('img');
 const i_about = document.createComment('div')
 
+// le footer
+const footer = document.createElement('footer');
+const footer_text = document.createElement('p');
+// ajout des contenu au footer
+footer.appendChild(footer_text);
+// le text du footer dans un pragraphe
+footer_text.innerHTML = 
+`
+&right ${Date = new Date().getFullYear()} Tous les droits rservés MATHMIND
+`;
+
 // je traite la photo de retour
 goBack.setAttribute('alt', 'la photo')
 goBack.setAttribute('src', 'images/logo.png')
@@ -339,13 +350,15 @@ mes_score.appendChild(paraScoreDif)
 mes_score.appendChild(goBack)
 
 apps_para1.innerHTML = 'L\'application MATHMIND est une application de jeux; simple et facile à utiliser, conçu pour développer la faculté mentale pour une meilleure réflexion rapide et claire pour des personnes à l\'âge de croissance'
-apps_para2.innerHTML = 'kcjl;xhc jzkl;xcjklz;zck;lkjhsd;flahkf;weisdfoayh;fklsdl;oidao;idoy'
-apps_para3.innerHTML = 'kcjl;xhc jzkl;xcjklz;zckl;oidao;idoyfp[oiey[iAUPJKCJLXNKCM,Z.HJSLDF'
+apps_para2.innerHTML = 'Cette application est conçu par des étudiants passionnés des sciences infiormatiques de l\' <a href="https://uniluk.org" target = "_blank">Université Adventiste de Lukanga</a> en 2025'
+apps_para3.innerHTML = 'Nos sommes disponibles pour repondre à des questions concernant cette application et à recevoir des suggestions. Nos questions sont tirées également des concourts scolaires, des tests d\'empauche et autres plusieurs activités scolaires'
 
-app.appendChild(apps_para1)
-app.appendChild(apps_para2)
-app.appendChild(apps_para3)
-app.appendChild(back)
+// Ajout des contenues a l'historique
+app.appendChild(apps_para1) // le paragraphe de l'historique
+app.appendChild(apps_para2) // le paragraphe de l'historique
+app.appendChild(apps_para3) // le paragraphe de l'historique
+app.appendChild(back) // le boutton de retour de l'historique
+app.appendChild(footer);
 
 apps.appendChild(app)
 

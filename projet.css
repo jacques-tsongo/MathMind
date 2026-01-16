@@ -712,4 +712,9 @@ body,html{
     max-width: 500px;
     width: 90%;
 }
+.app p{
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
 
