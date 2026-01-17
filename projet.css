@@ -638,6 +638,7 @@ body,html{
     gap: 20px;
     width: fit-content;
     cursor: pointer;
+    background: var(--div);
 }
 .apropos button{
     border: 0;
