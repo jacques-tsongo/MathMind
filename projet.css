@@ -713,8 +713,19 @@ body,html{
     width: 90%;
 }
 .app p{
-    line-height: 1.5;
+    line-height: 1.7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 18px;
 }
-
+.app p a{
+    text-decoration: none;
+}
+.app p a:hover{
+    color: #042aff;
+}
+.footer{
+    padding: 10px;
+    box-shadow: 0 0 7px var(--blanche);
+    border-radius: 20px;
+}

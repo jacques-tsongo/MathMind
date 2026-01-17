@@ -324,7 +324,7 @@ footer.appendChild(footer_text);
 // le text du footer dans un pragraphe
 footer_text.innerHTML = 
 `
-&right ${Date = new Date().getFullYear()} Tous les droits rservés MATHMIND
+&copy ${Date = new Date().getFullYear()}. Tous les droits rservés MATHMIND
 `;
 
 // je traite la photo de retour
@@ -358,6 +358,8 @@ app.appendChild(apps_para1) // le paragraphe de l'historique
 app.appendChild(apps_para2) // le paragraphe de l'historique
 app.appendChild(apps_para3) // le paragraphe de l'historique
 app.appendChild(back) // le boutton de retour de l'historique
+// ajout de la classe au footer
+footer.classList.add("footer")
 app.appendChild(footer);
 
 apps.appendChild(app)
