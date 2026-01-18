@@ -333,7 +333,7 @@ goBack.setAttribute('src', 'images/logo.png')
 goBack.classList.add('retour')
 
 back.setAttribute('alt', 'la photo')
-back.setAttribute('src', 'images/logo.png')
+back.setAttribute('src', 'images/undo.png')
 back.classList.add('retour')
 
 apps.classList.add('de_moi')
