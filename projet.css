@@ -654,6 +654,10 @@ body,html{
     letter-spacing: 2px;
     font-size: 16px;
 }
+.apropos img{
+    width: 35px;
+    cursor: pointer;
+}
 .apropos button:hover{
     background: linear-gradient(to top,rgb(6, 8, 62),rgba(0, 0, 255, 0.468),rgb(4, 13, 68));
 }

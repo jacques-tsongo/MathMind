@@ -329,7 +329,7 @@ footer_text.innerHTML =
 
 // je traite la photo de retour
 goBack.setAttribute('alt', 'la photo')
-goBack.setAttribute('src', 'images/logo.png')
+goBack.setAttribute('src', 'images/undo.png')
 goBack.classList.add('retour')
 
 back.setAttribute('alt', 'la photo')
