@@ -241,17 +241,9 @@ function showScore() {
 commencer.addEventListener("click", () => {
   document.querySelector(".instruction").classList.add("unhidden");
   main.classList.add("blur");
-});
 
-document.querySelector(".close").addEventListener("click", () => {
-  document.querySelector(".instruction").classList.remove("unhidden");
-  main.classList.remove("blur");
-});
-
-document.querySelector(".continuer").addEventListener("click", () => {
-    // la creation de l'espace de stockage des scores
+      // la creation de l'espace de stockage des scores
   if (!localStorage.firstLevel) {
-    console.log('oui ca existe');
     localStorage.firstLevel = 0;
   }
   if (!localStorage.secondLevel) {
@@ -260,6 +252,13 @@ document.querySelector(".continuer").addEventListener("click", () => {
   if (!localStorage.thirdLevel) {
     localStorage.thirdLevel = 0;
   }
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+  document.querySelector(".instruction").classList.remove("unhidden");
+  main.classList.remove("blur");
+});
+document.querySelector(".continuer").addEventListener("click", () => {
   lesNiveaux.classList.remove("levelsShow");
   niveaux.classList.remove("level-show");
 
