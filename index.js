@@ -95,8 +95,7 @@ function showNextQuestion() {
   if (currentQuestionIndex >= 10) {
     resultBox.appendChild(about);
     showScore();
-  // apps.classList.remove('apps')
-  return;
+    return;
   }
 
   // Réinitialiser et démarrer le chronometre
@@ -205,7 +204,7 @@ function showScore() {
   let progressSturtValue = -1;
   progressEndValue = (score / 10) * 100;
   let speed = 20;
-  
+
   // je cree les variables de stockage des donnees`
   let firstLevel = localStorage.firstLevel;
   let secondLevel = localStorage.secondLevel;
@@ -234,7 +233,14 @@ function showScore() {
       clearInterval(progress);
     }
   }, speed);
-  // scoreGard()
+  playSongEnd()
+}
+// la fonction qui joue la musique a la fin des questions
+
+const playSongEnd = () => {
+  const song = new Audio();
+  song.src = "./songs/singers.MP3";
+  song.play();
 }
 
 // les evenements de click sur les differents bouttons dans le jeu
@@ -242,7 +248,7 @@ commencer.addEventListener("click", () => {
   document.querySelector(".instruction").classList.add("unhidden");
   main.classList.add("blur");
 
-      // la creation de l'espace de stockage des scores
+  // la creation de l'espace de stockage des scores
   if (!localStorage.firstLevel) {
     localStorage.firstLevel = 0;
   }
@@ -252,6 +258,7 @@ commencer.addEventListener("click", () => {
   if (!localStorage.thirdLevel) {
     localStorage.thirdLevel = 0;
   }
+  playSongEnd();
 });
 
 document.querySelector(".close").addEventListener("click", () => {
@@ -321,8 +328,8 @@ const footer_text = document.createElement('p');
 // ajout des contenu au footer
 footer.appendChild(footer_text);
 // le text du footer dans un pragraphe
-footer_text.innerHTML = 
-`
+footer_text.innerHTML =
+  `
 &copy ${Date = new Date().getFullYear()}. Tous les droits rservés MATHMIND
 `;
 
@@ -365,7 +372,7 @@ apps.appendChild(app)
 
 
 //ajout des bouttons a la partie about et la verification de l'existance des bouttons avant de les ajouter
-about.addEventListener('click',() =>{
+about.addEventListener('click', () => {
   if (about.contains(boutton) || about.contains(apropos_btn)) {
     console.log("ca contient deja");
     about.removeChild(boutton)
