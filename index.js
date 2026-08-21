@@ -107,6 +107,10 @@ function showNextQuestion() {
   const randomIndex = Math.floor(Math.random() * currentTable.length);
   currentQuestion = currentTable[randomIndex];
   question.innerHTML = currentQuestion.question;
+  // Re-déclenchement de l'animation d'entrée (transition fluide entre questions)
+  question.classList.remove("question-entre");
+  void question.offsetWidth; // force le reflow pour relancer l'animation CSS
+  question.classList.add("question-entre");
 
   const compteur = `Question n° ${counter} sur 10`;
   document.querySelector(".leSpan").innerHTML = compteur;
@@ -144,7 +148,16 @@ function handleAnswerClick(button, selectedText) {
     mauvaiseReponse.innerHTML = `La bonne réponse est : <em>${vrai_reponse}</em>  😱`;
   }
   //on desactive tous les bouttons apres avoir cliquer sur un des bouttons puis afficher le boutton next
-  allButtons.forEach((btn) => btn.classList.add("disabled"));
+  allButtons.forEach((btn) => {
+    btn.classList.add("disabled", "reponse-verrouillee");
+    // Feedback visuel (décoratif) : bonne réponse en vert, mauvaise en rouge
+    if (btn.textContent === vrai_reponse) {
+      btn.classList.add("reponse-correcte");
+    }
+    if (btn === button && selectedText !== vrai_reponse) {
+      btn.classList.add("reponse-mauvaise");
+    }
+  });
   next.style.display = "block";
 }
 
@@ -155,7 +168,10 @@ function handleTimeOut() {
   mauvaiseReponse.style.display = "block";
   mauvaiseReponse.innerHTML = `Temps de réflexion écoulé !<br>La bonne réponse était : <em><strong>${vrai_reponse}<strong></em>  🥺`;
   document.querySelectorAll(".answers").forEach((btn) => {
-    btn.classList.add("disabled");
+    btn.classList.add("disabled", "reponse-verrouillee");
+    if (btn.textContent === vrai_reponse) {
+      btn.classList.add("reponse-correcte");
+    }
   });
   next.style.display = "block";
 }
@@ -166,6 +182,10 @@ function startChrono() {
     //on desingremente cette variable
     tempsRestant--;
     chrono.innerText = tempsRestant;
+    // Effet visuel d'urgence quand il reste peu de temps
+    if (tempsRestant <= 5) {
+      chrono.classList.add("urgence");
+    }
     if (tempsRestant <= 0) {
       stopChrono();
       handleTimeOut();
@@ -191,6 +211,98 @@ recommencer.addEventListener("click", () => {
   startQuiz();
 });
 
+// ============ PLUIE DE FLEURS (félicitations, score >= 70%) ============
+// Génère une pluie élégante de fleurs 100% CSS (tailles, vitesses,
+// rotations, trajectoires et couleurs variées) — déclenchée UNIQUEMENT
+// quand le score final est >= 70%. Aucune interaction n'est bloquée
+// (pointer-events: none) et le DOM est nettoyé après l'animation.
+const PALETTES_FLEURS = [
+  { petale: "#ff5fa2", coeur: "#ffd86b" }, // rose / jaune
+  { petale: "#b06bff", coeur: "#ffd86b" }, // violet
+  { petale: "#ff8a3d", coeur: "#fff06b" }, // orange
+  { petale: "#ff4d6d", coeur: "#ffd86b" }, // rouge
+  { petale: "#ffffff", coeur: "#ffd86b" }, // blanc
+  { petale: "#00e5ff", coeur: "#b06bff" }, // cyan
+  { petale: "#ffd86b", coeur: "#ff5fa2" }  // jaune
+];
+
+let pluieFleursTimeout = null;
+
+function lancerPluieDeFleurs() {
+  const ecranResultat = document.querySelector(".voir_good_score");
+  if (!ecranResultat) return;
+
+  // Nettoie une éventuelle pluie précédente (Recommencer plusieurs fois)
+  const ancienne = ecranResultat.querySelector(".pluie-fleurs");
+  if (ancienne) ancienne.remove();
+  if (pluieFleursTimeout) clearTimeout(pluieFleursTimeout);
+
+  const conteneur = document.createElement("div");
+  conteneur.className = "pluie-fleurs";
+
+  const NOMBRE = 26;
+  for (let i = 0; i < NOMBRE; i++) {
+    const palette = PALETTES_FLEURS[Math.floor(Math.random() * PALETTES_FLEURS.length)];
+    const duree = (4 + Math.random() * 4).toFixed(2);         // 4 -> 8 s (vitesse)
+    const retard = (Math.random() * 3).toFixed(2);            // 0 -> 3 s
+    const echelle = (0.5 + Math.random() * 0.9).toFixed(2);   // 0.5 -> 1.4 (taille)
+    const oscDur = (2 + Math.random() * 2.5).toFixed(2);      // oscillation
+    const oscillation = Math.round(10 + Math.random() * 40);  // amplitude px
+    const rotation = Math.round(180 + Math.random() * 540);   // deg
+    const opacite = (0.7 + Math.random() * 0.3).toFixed(2);   // 0.7 -> 1
+    const x = (Math.random() * 100).toFixed(2) + "%";         // position de départ
+
+    const fleur = document.createElement("div");
+    fleur.className = "fleur";
+    fleur.style.setProperty("--x", x);
+    fleur.style.setProperty("--duree", duree + "s");
+    fleur.style.setProperty("--retard", retard + "s");
+    fleur.style.setProperty("--rotation", rotation + "deg");
+    fleur.style.setProperty("--opacite", opacite);
+
+    const swing = document.createElement("div");
+    swing.className = "fleur-swing";
+    swing.style.setProperty("--bal-duree", oscDur + "s");
+    swing.style.setProperty("--retard", retard + "s");
+    swing.style.setProperty("--oscillation", oscillation + "px");
+
+    const petale = document.createElement("div");
+    petale.className = "fleur-petale";
+    petale.style.setProperty("--echelle", echelle);
+    petale.style.setProperty("--petale", palette.petale);
+    petale.style.setProperty("--coeur", palette.coeur);
+
+    swing.appendChild(petale);
+    fleur.appendChild(swing);
+    conteneur.appendChild(fleur);
+  }
+
+  ecranResultat.appendChild(conteneur);
+
+  // Nettoyage du DOM une fois toutes les animations terminées (performance)
+  const dureeMaxMs = (3 + 8) * 1000 + 1000; // retard max + durée max + marge
+  pluieFleursTimeout = setTimeout(() => {
+    if (conteneur.parentNode) conteneur.remove();
+  }, dureeMaxMs);
+}
+
+// Re-déclenche une animation CSS existante sur un élément (utile pour les
+// écrans déjà présents dans le DOM mais affichés plus tard).
+function rejouerAnimation(el) {
+  if (!el) return;
+  el.style.animation = "none";
+  void el.offsetWidth; // force le reflow
+  el.style.animation = "";
+}
+
+// Apparition échelonnée des boutons de niveaux (au moment de l'affichage).
+function animerEntreeNiveaux() {
+  const boutons = document.querySelectorAll(".niveaux_btn");
+  boutons.forEach((b) => b.classList.remove("niveau-entre"));
+  void document.body.offsetWidth; // force le reflow pour relancer l'animation
+  boutons.forEach((b) => b.classList.add("niveau-entre"));
+}
+
 // cette fonction nous permet d'afficher la partie du score du parcours dans le jeu
 let progressEndValue = 0;
 function showScore() {
@@ -199,11 +311,21 @@ function showScore() {
   resultBox.classList.remove("demasquer");
   questionsReussies.innerHTML = `Vous avez réussi ${score} questions sur 10.`;
 
+  // Re-déclenchement des animations d'entrée de l'écran résultat
+  rejouerAnimation(document.querySelector(".good_score"));
+  rejouerAnimation(document.querySelector(".felicitation"));
+  rejouerAnimation(questionsReussies);
+
   let circularProgress = document.querySelector(".circular_progress");
   let pourcentageOne = document.querySelector(".pourcent_one");
   let progressSturtValue = -1;
   progressEndValue = (score / 10) * 100;
   let speed = 20;
+
+  // 🌸 Pluie de fleurs de félicitations UNIQUEMENT si score >= 70%
+  if (progressEndValue >= 70) {
+    lancerPluieDeFleurs();
+  }
 
   // je cree les variables de stockage des donnees`
   let firstLevel = localStorage.firstLevel;
@@ -239,7 +361,9 @@ function showScore() {
 
 const playSongEnd = () => {
   const song = new Audio();
-  song.src = "./songs/singers.MP3";
+  // Correction : le fichier s'appelle "singers.mp3" (minuscules).
+  // L'ancienne valeur "singers.MP3" cassait sur les serveurs sensibles à la casse.
+  song.src = "./songs/singers.mp3";
   song.play();
 }
 
@@ -268,6 +392,7 @@ document.querySelector(".close").addEventListener("click", () => {
 document.querySelector(".continuer").addEventListener("click", () => {
   lesNiveaux.classList.remove("levelsShow");
   niveaux.classList.remove("level-show");
+  animerEntreeNiveaux();
 
   // ajout de l'historique
   // lesNiveaux.appendChild(about)
@@ -287,6 +412,7 @@ function resetQuestion() {
   next.style.display = "none";
   stopChrono();
   chrono.innerText = "";
+  chrono.classList.remove("urgence");
 }
 
 // Revenir a choisir les niveaux depuis l'écran des résultats par le boutton menu
@@ -296,6 +422,7 @@ document.querySelector(".back").addEventListener("click", () => {
   resultBox.classList.add("demasquer");
   score = 0;
   document.querySelector(".leScore").innerHTML = `Votre score est de ${score} sur 10<br>ou ${(score / 10) * 100}%`;
+  animerEntreeNiveaux();
 });
 
 
